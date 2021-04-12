@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html"><img src="images/LOGOO.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="INDEX.html" >HOME</a></li>
+                    <li><a href="About.html" >ABOUT</a></li>
+                    <li><a href="Contact Us.html" >CONTACT US</a></li>
+                    <li><a href="SignUp.html"><button type="submit" class="hero-btn red-btn">Sign In</button></a></li>
+                </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Join Us</h1>
+    </section>   
+    <section>
+        <div class="backgroundsi">
+            <div class="form-boxsi">
+                <div class="btn-boxsi">
+                    <div id="btnsi">
+                    </div>
+                    <button type="button" class="toggle" onclick="login()">Log In</button>
+                    <button type="button" class="toggle" onclick="signin()">Sign In</button>
+                </div>
+                <div class="social-iconssi">
+                    <img src="images/fb.png">
+                    <img src="images/tw.png">
+                    <img src="images/gp.png">
+                </div>
+                <form id="login" class="inputsi">
+                    <input type="text" class="input-box" placeholder="User ID" required>
+                    <input type="text" class="input-box" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"> <span>Remember Password</span>
+                    <button type="submit" class="submit-box">Log in</button>
+                </form>
+                <form id="signin" class="inputsi">
+                    <input type="text" class="input-box" placeholder="User ID" required>
+                    <input type="email" class="input-box" placeholder="Email ID" required>
+                    <input type="text" class="input-box" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"> <span>I agree to the Terms&Conditions</span>>
+                    <button type="submit" class="submit-box">Sign in</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("signin");
+            var z = document.getElementById("btnsi");
+    
+            function signin(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+    </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p> blah blah blah blah blah</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200";
+    }
+</script>
+</body>
+</html>
